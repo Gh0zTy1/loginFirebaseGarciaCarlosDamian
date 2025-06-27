@@ -49,13 +49,12 @@ class SignInActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d("INFO", "signInWithEmail:success")
                     val user = auth.currentUser
-
                     val intent = Intent(this, MainActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    intent.putExtra("user", user?.email)
                     startActivity(intent)
+
                     finish()
                 } else {
-                    
                     Log.w("ERROR", "signInWithEmail:failure", task.exception)
                     Toast.makeText(
                         baseContext,

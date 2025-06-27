@@ -57,18 +57,16 @@ class LoginActivity : AppCompatActivity() {
                     showError(visible = false)
                     goToMain(user!!)
                 } else {
-
                     showError("Usuario y/o contraseña equivocados", true)
                 }
             }
     }
 
     private fun goToMain(user: FirebaseUser) {
-
         val intent = Intent(this, MainActivity::class.java)
         intent.putExtra("user", user.email)
-        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
+
         finish()
     }
 
