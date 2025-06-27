@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461144948224",
+    "project_id": "iniciosesionpractica",
+    "storage_bucket": "iniciosesionpractica.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461144948224:android:b984e59edd9ec1861da2e5",
+        "android_client_info": {
+          "package_name": "garcia.carlosdamian.practicaautenticaciongarciacd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgGmC3Odgi5hCYU1h1l9oaXka1er1pYcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
